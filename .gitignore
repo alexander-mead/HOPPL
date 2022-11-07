@@ -1,0 +1,7 @@
+__pycache__/
+outputs/
+wandb/
+scaffold/
+*.json
+notebooks/scrap.ipynb
+*.dat
