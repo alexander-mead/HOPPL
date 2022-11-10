@@ -103,7 +103,7 @@ def run_programs(programs, prog_set, base_dir, daphne_dir, num_samples=int(1e3),
         t_finish = time()
         print('Time taken [s]:', t_finish-t_start)
         print('Number of samples:', len(samples))
-        print('Finished program {}\n'.format(i))
+        print('Finished program:', i)
 
 
 @hydra.main(version_base=None, config_path='', config_name='config')

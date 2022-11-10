@@ -5,7 +5,7 @@ wandb_run: False
 seed: None
 
 # Directory structure
-base_dir: ../Homework_6 # NOTE: This path should be relative to the daphne path
+base_dir: ../HOPPL # NOTE: This path should be relative to the daphne path
 daphne_dir: ../daphne   # NOTE: This path should be relative to the repository path
 
 # Parameters
@@ -28,4 +28,4 @@ compile: False
 
 # Inference stuff
 num_samples: 1e6
-tmax: 60 # Seconds
+tmax: 20 # Seconds

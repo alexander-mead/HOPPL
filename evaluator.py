@@ -142,13 +142,14 @@ def eval(e, sig:dict, env:Env, trampolining=True, verbose=False):
     return result
 
 
-def evaluate(ast:dict, sig={}, run_name='start', verbose=False):
+def evaluate(ast:dict, sig=None, run_name='start', verbose=False):
     '''
     Evaluate a HOPPL program as desugared by daphne
     Args:
         ast: abstract syntax tree
     Returns: The return value of the program
     '''
+    if sig is None: sig = {}
     env = standard_env()
     output = lambda x: x # Identity function, so that output value is identical to output
     exp = eval(ast, sig, env, verbose)(run_name, output) # NOTE: Must run as function with a continuation
