@@ -150,6 +150,11 @@ def run_all(cfg):
     run_programs(programs, prog_set='homework_6', base_dir=base_dir, daphne_dir=daphne_dir,
         num_samples=num_samples, tmax=tmax, inference=inference, compile=compile, wandb_run=wandb_run, verbose=False)
 
+    # FOPPL
+    programs = cfg['FOPPL_programs']
+    run_programs(programs, prog_set='FOPPL', base_dir=base_dir, daphne_dir=daphne_dir,
+        num_samples=num_samples, tmax=tmax, inference=inference, compile=compile, wandb_run=wandb_run, verbose=False)
+
     # W&B finalize
     if wandb_run: wandb.finish()
 

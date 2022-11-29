@@ -17,6 +17,7 @@ hoppl_deterministic_tests: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 probabilistic_tests: [1, 2, 3, 4, 5, 6, 7, 8]
 homework5_programs: []
 homework6_programs: [1, 2, 3]
+FOPPL_programs: [1, 2]
 
 # Inference method
 #inference: None
